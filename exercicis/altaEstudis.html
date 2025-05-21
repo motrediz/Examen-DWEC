@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicis objectes creats per l'usuari</title>
+    <link href="../css/practica.css" rel="stylesheet">
+    <link href="../imatges/logo-cifp.ico" rel="icon" type="image/x-icon">
+    <script src="js/altaEstudis.js" type="module"></script>
+</head>
+<body>
+<div id="container" class="containerPrincipal">
+    <div>
+        <div class="esquerra"><img alt="Logo CIFP Pau Casesnoves" src="../imatges/cropped-Logo_Pau.png"></div>
+        <div>
+            <h3>Desenvolupament web al costat del client</h3>
+            <h2>Examen presencial maig 2024</h2>
+        </div>
+    </div>
+    <div>
+        <h2>Alta estudis.</h2>
+        <form id="fEstudis" action="../repGet.html" method="get">
+            <p><label for="codi">Codi: </label><input type="text" id="codi" name="codi"></p>
+            <p><label for="nom">Nom: </label><input type="text" id="nom" name="nom"></p>
+            <p>
+                <label for="tipusEstudis">Tipus d'estudis: </label>
+                <select type="text" id="tipusEstudis" name="tipusEstudis">
+                    <option value="">Tria una opció</option>
+                </select>
+            </p>
+            <p>
+                <button id="bSubmit" type="submit">Guarda</button>
+                <button id="bReset" type="reset">Netejar formulari</button>
+            </p>
+        </form>
+        <p><a href="../index.html">Torna a l'índex</a></p>
+    </div>
+</div>
+</body>
+</html>

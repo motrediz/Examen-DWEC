@@ -1,0 +1,98 @@
+body {
+    font-family: arial, Helvetica, sans-serif;
+    font-size: large;
+    line-height: 1.5em;
+    height: 100%;
+}
+
+input, button {
+    font-family: arial, Helvetica, sans-serif;
+    font-size: medium;
+    line-height: 1.25em;
+    height: 100%;
+}
+
+input:read-only {
+    background-color: #d8e3d7;
+}
+
+#capsal {
+    background-image: url("../imatges/cap.jpg");
+    height: 172px;
+}
+
+#capsal > p {
+    color: white;
+    font-size: xxx-large;
+    font-weight: bolder;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 172px;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+}
+
+.containerPrincipal {
+    background-image: url("../imatges/fons-cifp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html, body, .containerPrincipal {
+    height: 100%;
+
+}
+
+.containerPrincipal {
+    min-height: fit-content;
+}
+
+#mostrador div {
+    border: black solid 1px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-radius: 12px;
+}
+
+label {
+    margin-right: 2em;
+}
+
+#mostrador button {
+    margin-left: 2em;
+}
+
+
+th, tr, td {
+    border: black solid 2px;
+    padding: 0.5em;
+}
+
+th {
+    background-color: #437dcc;
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.esquerra {
+    float: left;
+    width: auto;
+    margin-right: 3em;
+}
+
+input + label{
+    margin-left: 0.75em;
+}
+

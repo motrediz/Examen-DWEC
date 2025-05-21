@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Alta aspirant</title>
+    <link href="../css/practica.css" rel="stylesheet">
+    <link href="../imatges/logo-cifp.ico" rel="icon" type="image/x-icon">
+    <script src="js/altaAspirant2.js" type="module"></script>
+    <script src="js/altaAspirant3.js" type="module"></script>
+</head>
+<body>
+<div id="container" class="containerPrincipal">
+    <div>
+        <div class="esquerra"><img alt="Logo CIFP Pau Casesnoves" src="../imatges/cropped-Logo_Pau.png"></div>
+        <div>
+            <h3>Desenvolupament web al costat del client</h3>
+            <h2>Examen presencial maig 2024</h2>
+        </div>
+    </div>
+    <div>
+        <h2>Alta aspirant</h2>
+        <form id="fAspirant" action="../repGet.html" method="get">
+            <p><label for="dni">DNI: </label><input type="text" id="dni" name="dni"></p>
+            <p><label for="nom">Nom: </label><input type="text" id="nom" name="nom"></p>
+            <p><label for="llinatges">Llinatges: </label><input type="text" id="llinatges" name="llinatges"></p>
+            <p><label for="adreca">Adreça: </label><input type="text" id="adreca" name="adreca"></p>
+            <p><label for="codiPostal">Codi postal: </label><input type="text" id="codiPostal" name="codiPostal"></p>
+            <p>
+                <label>Illa: </label>
+                <span>
+                    <input type="radio" name="illa" id="illa071" value="071"><label for="illa071">Mallorca</label>
+                    <input type="radio" name="illa" id="illa072" value="072"><label for="illa072">Menorca</label>
+                    <input type="radio" name="illa" id="illa073" value="073"><label for="illa073">Eivissa</label>
+                    <input type="radio" name="illa" id="illa074" value="074"><label for="illa074">Formentera</label>
+                </span>
+            </p>
+            <p><label for="idLocalitat">Localitat: </label><select id="idLocalitat" name="idLocalitat">
+                <option value="">Seleccioni una localitat</option>
+            </select>
+            <p>
+                <button id="bSubmit" type="submit">Alta</button>
+                <button id="bReset" type="reset">Netejar formulari</button>
+            </p>
+        </form>
+        <p><a href="../index.html">Torna a l'índex</a></p>
+    </div>
+</div>
+</body>
+</html>

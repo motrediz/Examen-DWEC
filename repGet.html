@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Dades rebudes del formulari</title>
+    <link href="css/practica.css" rel="stylesheet">
+    <link href="imatges/logo-cifp.ico" rel="icon" type="image/x-icon">
+    <style>
+        .titol {
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload = function () {
+            const searchParams = new URLSearchParams(location.search);
+            const mostrador=document.getElementById('mostrador');
+            for(const [nom, valor] of searchParams){
+                mostrador.innerHTML+=`<p><strong>${nom}</strong>: ${valor}</p>`
+            }
+
+            document.getElementById("boto").onclick = function () {
+                history.back();
+            }
+        }
+    </script>
+
+</head>
+<body>
+<div id="container" class="containerPrincipal">
+    <div>
+        <div class="esquerra"><img alt="Logo CIFP Pau Casesnoves" src="imatges/cropped-Logo_Pau.png"></div>
+        <div>
+            <h3>Desenvolupament web al costat del client</h3>
+            <h2>Examen presencial maig 2024</h2>
+        </div>
+    </div>
+    <div>
+        <h1>Dades rebudes del formulari</h1>
+        <div id="mostrador"></div>
+        <p>
+            <button type="button" id="boto">Tornar</button>
+        </p>
+    </div>
+</div>
+</body>
+</html>
+
